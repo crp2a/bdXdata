@@ -5,11 +5,11 @@
 \alias{bdXdata-package}
 \alias{_PACKAGE}
 \alias{bdXdata}
-\title{bdXdata: This package}
+\title{bdXdata: Shared data in use at the CRP2A laboratory.}
 \description{
 \if{html}{\figure{logo.png}{options: align='right' alt='logo' width='120'}}
 
-A collection of shared data in use at the CRP2A laboratory for calibration.
+A collection of shared data in use at the CRP2A laboratory.
 }
 \details{
 \tabular{ll}{
@@ -23,6 +23,7 @@ A collection of shared data in use at the CRP2A laboratory for calibration.
 Useful links:
 \itemize{
   \item \url{https://github.com/crp2a/bdXdata}
+  \item Report bugs at \url{https://github.com/crp2a/bdXdata/issues}
 }
 
 }
