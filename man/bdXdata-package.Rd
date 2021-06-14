@@ -13,10 +13,10 @@ A collection of shared data in use at the CRP2A laboratory.
 }
 \details{
 \tabular{ll}{
- \strong{Package:} \tab bdXdata \cr
- \strong{Type:} \tab Package \cr
- \strong{Version:} \tab 0.1.0 \cr
- \strong{License:} \tab GPL-3
+\strong{Package:} \tab bdXdata \cr
+\strong{Type:} \tab Package \cr
+\strong{Version:} \tab 0.1.0 \cr
+\strong{License:} \tab GPL-3
 }
 }
 \seealso{
@@ -31,8 +31,8 @@ Useful links:
 \strong{Full list of authors and contributors} (alphabetic order)
 
 \tabular{ll}{
- Nicolas Frerebeau \tab \emph{Université Bordeaux Montaigne, France} \cr
- Brice Lebrun \tab \emph{Université Bordeaux Montaigne, France} \cr
+Nicolas Frerebeau \tab \emph{Université Bordeaux Montaigne, France} \cr
+Brice Lebrun \tab \emph{Université Bordeaux Montaigne, France} \cr
 }
 
 \strong{Package maintainer}

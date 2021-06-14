@@ -1,19 +1,19 @@
 #' @details
 #' \tabular{ll}{
-#'  \strong{Package:} \tab bdXdata \cr
-#'  \strong{Type:} \tab Package \cr
-#'  \strong{Version:} \tab 0.1.0 \cr
-#'  \strong{License:} \tab GPL-3
+#'  **Package:** \tab bdXdata \cr
+#'  **Type:** \tab Package \cr
+#'  **Version:** \tab 0.1.0 \cr
+#'  **License:** \tab GPL-3
 #' }
 #' @author
-#' \strong{Full list of authors and contributors} (alphabetic order)
+#' **Full list of authors and contributors** (alphabetic order)
 #'
 #' \tabular{ll}{
-#'  Nicolas Frerebeau \tab \emph{Université Bordeaux Montaigne, France} \cr
-#'  Brice Lebrun \tab \emph{Université Bordeaux Montaigne, France} \cr
+#'  Nicolas Frerebeau \tab *Université Bordeaux Montaigne, France* \cr
+#'  Brice Lebrun \tab *Université Bordeaux Montaigne, France* \cr
 #' }
 #'
-#' \strong{Package maintainer}
+#' **Package maintainer**
 #'
 #' Brice Lebrun\cr
 #' \email{brice.lebrun@@u-bordeaux-montaigne.fr}
@@ -29,6 +29,3 @@
 #' @docType package
 #' @keywords internal
 "_PACKAGE"
-
-
-

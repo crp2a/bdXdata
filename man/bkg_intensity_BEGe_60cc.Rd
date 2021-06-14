@@ -6,16 +6,17 @@
 \title{BEGe 60cc calibration data}
 \format{
 A list of data frame with 8 variables:
- \describe{
-  \item{isotope}{Measured isotope}
-  \item{serie}{Radioactive decay series to which the considered isotope belongs.}
-  \item{energy}{Theoretical energy of the considered peak.}
-  \item{bkg}{Background intensity value (c/ks).}
-  \item{bkg_error}{Background error intensity value (c/ks).}
-  \item{standard_name}{Name of the used standard.}
-  \item{standard}{Standard intensity value (c/ks).}
-  \item{standard_error}{Standard error intensity value (c/ks).}
- }
+\describe{
+\item{\code{isotope}}{Measured isotope}
+\item{\code{serie}}{Radioactive decay series to which the considered isotope
+belongs.}
+\item{\code{energy}}{Theoretical energy of the considered peak.}
+\item{\code{bkg}}{Background intensity value (c/ks).}
+\item{\code{bkg_error}}{Background error intensity value (c/ks).}
+\item{\code{standard_name}}{Name of the used standard.}
+\item{\code{standard}}{Standard intensity value (c/ks).}
+\item{\code{standard_error}}{Standard error intensity value (c/ks).}
+}
 }
 \usage{
 bkg_intensity_BEGe_60cc
