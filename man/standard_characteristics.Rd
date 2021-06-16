@@ -31,7 +31,8 @@ standard characteristics
 \seealso{
 Other BEGe: 
 \code{\link{bkg_intensity_BEGe_12cc}},
-\code{\link{bkg_intensity_BEGe_60cc}}
+\code{\link{bkg_intensity_BEGe_60cc}},
+\code{\link{mass_absorption_coefficient}}
 }
 \concept{BEGe}
 \keyword{datasets}

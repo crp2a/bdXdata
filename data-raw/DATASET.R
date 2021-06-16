@@ -37,3 +37,11 @@ standard_characteristics <- read.table(file = "data-raw/BEGe_calibration/standar
 
 # save as RDA
 usethis::use_data(standard_characteristics, overwrite = TRUE)
+
+# mass absorption coefficient ==================================================
+
+mass_absorption_coefficient <- read.table(file = "data-raw/BEGe_calibration/mass_absorption_coefficient.csv", header = TRUE, sep = ",", dec = ".")
+
+# save as RDA
+usethis::use_data(mass_absorption_coefficient, overwrite = TRUE)
+

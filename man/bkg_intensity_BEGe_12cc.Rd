@@ -27,6 +27,7 @@ Background and standard intensity values for 12cc BEGe.
 \seealso{
 Other BEGe: 
 \code{\link{bkg_intensity_BEGe_60cc}},
+\code{\link{mass_absorption_coefficient}},
 \code{\link{standard_characteristics}}
 }
 \concept{BEGe}
