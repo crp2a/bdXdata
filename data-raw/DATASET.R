@@ -36,6 +36,13 @@ std_activity <- read.table(
 )
 usethis::use_data(std_activity, overwrite = TRUE)
 
+## Clermont --------------------------------------------------------------------
+std_clermont <- read.table(
+  file = "data-raw/standards/std_clermont.csv",
+  header = TRUE, sep = ",", dec = "."
+)
+usethis::use_data(std_clermont, overwrite = TRUE)
+
 # Reference Values =============================================================
 ## Mass Absorption Coefficient -------------------------------------------------
 ref_mac <- read.table(
