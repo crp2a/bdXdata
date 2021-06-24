@@ -1,47 +1,45 @@
-## code to prepare `DATASET` dataset goes here
-usethis::use_data(DATASET, overwrite = TRUE)
+# PREPARE DATASETS
 
+# BEGe =========================================================================
+## Background and Standards Intensity ------------------------------------------
 
-# bkg_intensity_BEGe data ======================================================
-
-
-# read raw_data
+# 12cc raw data
 bkg_intensity_BEGe_12cc_2019 <- read.table(file = "data-raw/BEGe_calibration/bkg_standard_intensity_BEGe_12cc_2019.csv", header = TRUE, sep = ",", dec = ".")
 bkg_intensity_BEGe_12cc_2020 <- read.table(file = "data-raw/BEGe_calibration/bkg_standard_intensity_BEGe_12cc_2020.csv", header = TRUE, sep = ",", dec = ".")
 bkg_intensity_BEGe_12cc_2021 <- read.table(file = "data-raw/BEGe_calibration/bkg_standard_intensity_BEGe_12cc_2021.csv", header = TRUE, sep = ",", dec = ".")
+# 60cc raw data
 bkg_intensity_BEGe_60cc_2019 <- read.table(file = "data-raw/BEGe_calibration/bkg_standard_intensity_BEGe_60cc_2019.csv", header = TRUE, sep = ",", dec = ".")
 bkg_intensity_BEGe_60cc_2020 <- read.table(file = "data-raw/BEGe_calibration/bkg_standard_intensity_BEGe_60cc_2020.csv", header = TRUE, sep = ",", dec = ".")
 bkg_intensity_BEGe_60cc_2021 <- read.table(file = "data-raw/BEGe_calibration/bkg_standard_intensity_BEGe_60cc_2021.csv", header = TRUE, sep = ",", dec = ".")
 
 # store as list
-bkg_intensity_BEGe_60cc <- list(
+BEGe_60cc <- list(
   '2019' = bkg_intensity_BEGe_60cc_2019,
   '2020' = bkg_intensity_BEGe_60cc_2020,
   '2021' = bkg_intensity_BEGe_60cc_2021
 )
-bkg_intensity_BEGe_12cc <- list(
+BEGe_12cc <- list(
   '2019' = bkg_intensity_BEGe_12cc_2019,
   '2020' = bkg_intensity_BEGe_12cc_2020,
   '2021' = bkg_intensity_BEGe_12cc_2021
 )
 
 # save as RDA
-usethis::use_data(bkg_intensity_BEGe_60cc, overwrite = TRUE)
-usethis::use_data(bkg_intensity_BEGe_12cc, overwrite = TRUE)
+usethis::use_data(BEGe_60cc, overwrite = TRUE)
+usethis::use_data(BEGe_12cc, overwrite = TRUE)
 
+# Standard Materials ===========================================================
+## Activity --------------------------------------------------------------------
+std_activity <- read.table(
+  file = "data-raw/standards/std_activity.csv",
+  header = TRUE, sep = ",", dec = "."
+)
+usethis::use_data(std_activity, overwrite = TRUE)
 
-# standard_characteristics =====================================================
-
-# read raw_data
-standard_characteristics <- read.table(file = "data-raw/BEGe_calibration/standard_characteristics.csv", header = TRUE, sep = ",", dec = ".")
-
-# save as RDA
-usethis::use_data(standard_characteristics, overwrite = TRUE)
-
-# mass absorption coefficient ==================================================
-
-mass_absorption_coefficient <- read.table(file = "data-raw/BEGe_calibration/mass_absorption_coefficient.csv", header = TRUE, sep = ",", dec = ".")
-
-# save as RDA
-usethis::use_data(mass_absorption_coefficient, overwrite = TRUE)
-
+# Reference Values =============================================================
+## Mass Absorption Coefficient -------------------------------------------------
+ref_mac <- read.table(
+  file = "data-raw/references/mass_absorption_coefficient.csv",
+  header = TRUE, sep = ",", dec = "."
+)
+usethis::use_data(ref_mac, overwrite = TRUE)

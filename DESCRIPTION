@@ -1,6 +1,6 @@
 Package: bdXdata
 Type: Package
-Title: Shared data in use at the CRP2A laboratory. 
+Title: Shared Data in Use at the CRP2A Laboratory
 Version: 0.1.0
 Authors@R: 
     c(person(given = "Nicolas",

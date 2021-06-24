@@ -1,10 +1,10 @@
 # ==============================================================================
-#' BEGe 12cc calibration data
+#' BEGe 12cc Calibration Data
 #'
 #' Background and standard intensity values for 12cc BEGe.
-#' @format A list of data frame with 8 variables:
+#' @format A [`list`] of [`data.frame`] with 8 variables:
 #'  \describe{
-#'   \item{`isotope`}{Measured isotope}
+#'   \item{`isotope`}{Measured isotope.}
 #'   \item{`serie`}{Radioactive decay series to which the considered isotope
 #'   belongs.}
 #'   \item{`energy`}{Theoretical energy of the considered peak.}
@@ -16,33 +16,32 @@
 #'  }
 #' @family BEGe
 #' @keywords datasets
-"bkg_intensity_BEGe_12cc"
+"BEGe_12cc"
 
 # ==============================================================================
-#' BEGe 60cc calibration data
+#' BEGe 60cc Calibration Data
 #'
 #' Background and standard intensity values for 60cc BEGe.
-#' @format A list of data frame with 8 variables:
+#' @format A [`list`] of [`data.frame`] with 8 variables:
 #'  \describe{
-#'   \item{`isotope`}{Measured isotope}
+#'   \item{`isotope`}{Measured isotope.}
 #'   \item{`serie`}{Radioactive decay series to which the considered isotope
 #'   belongs.}
 #'   \item{`energy`}{Theoretical energy of the considered peak.}
 #'   \item{`bkg`}{Background intensity value (c/ks).}
 #'   \item{`bkg_error`}{Background error intensity value (c/ks).}
-#'   \item{`standard_name`}{Name of the used standard.}
+#'   \item{`standard_name`}{Name of the standard used.}
 #'   \item{`standard`}{Standard intensity value (c/ks).}
 #'   \item{`standard_error`}{Standard error intensity value (c/ks).}
 #'  }
 #' @family BEGe
 #' @keywords datasets
-"bkg_intensity_BEGe_60cc"
+"BEGe_60cc"
 
 # ==============================================================================
-#' standard characteristics
+#' Characteristics of Standard Materials
 #'
-#' standard characteristics
-#' @format A data frame with 2 rows and 14 variables
+#' @format A [`data.frame`] with 2 rows and 14 variables:
 #'  \describe{
 #'   \item{`standard`}{Name of the standard.}
 #'   \item{`thickness`}{Thickness in centimeter.}
@@ -54,19 +53,18 @@
 #'   \item{`activity_Th_error`}{Thorium specific activity error (Bq/kg).}
 #'   \item{`activity_K`}{Potassium specific activity (Bq/kg).}
 #'   \item{`activity_K_error`}{Potassium specific activity error (Bq/kg).}
-#'   \item{`content_U`}{Uranium content (ppm)}
-#'   \item{`content_Th`}{Thorium content (ppm)}
-#'   \item{`content_K`}{Potassium content (\%)}
+#'   \item{`content_U`}{Uranium content (ppm).}
+#'   \item{`content_Th`}{Thorium content (ppm).}
+#'   \item{`content_K`}{Potassium content (%).}
 #'  }
-#' @family BEGe
+#' @family standards
 #' @keywords datasets
-"standard_characteristics"
+"std_activity"
 
 # ==============================================================================
-#' mass absorption coefficient
+#' Mass Absorption Coefficient
 #'
-#' mass absorption coefficient
-#' @format A data frame with 22 observations of 18 variables
+#' @format A [`data.frame`] with 22 observations of 18 variables:
 #'  \describe{
 #'   \item{`energy`}{Energy in keV.}
 #'   \item{`hydrogen`}{Mass absorption coefficient of hydrogen (cm2/g).}
@@ -87,7 +85,6 @@
 #'   \item{`manganese`}{Mass absorption coefficient of manganese (cm2/g).}
 #'   \item{`iron`}{Mass absorption coefficient of iron (cm2/g).}
 #'  }
-#' @family BEGe
+#' @family references
 #' @keywords datasets
-"mass_absorption_coefficient"
-
+"ref_mac"

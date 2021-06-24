@@ -21,3 +21,9 @@ reference:
 - title: BEGe Spectrometry
   contents:
   - has_concept("BEGe")
+- title: Standard Materials
+  contents:
+  - has_concept("standards")
+- title: Reference Values
+  contents:
+  - has_concept("references")

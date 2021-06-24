@@ -5,7 +5,7 @@
 \alias{bdXdata-package}
 \alias{_PACKAGE}
 \alias{bdXdata}
-\title{bdXdata: Shared data in use at the CRP2A laboratory.}
+\title{bdXdata: Shared Data in Use at the CRP2A Laboratory}
 \description{
 \if{html}{\figure{logo.png}{options: align='right' alt='logo' width='120'}}
 
