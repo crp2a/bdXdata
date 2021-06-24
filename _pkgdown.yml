@@ -1,0 +1,23 @@
+url: https://crp2a.github.io/bdXdata
+development:
+  mode: auto
+
+authors:
+  Université Bordeaux Montaigne:
+    href: https://www.u-bordeaux-montaigne.fr
+    html: <img src="https://crp2a.github.io/bdXdata/reference/figures/logo_ubm.jpg" height="64" />
+  CNRS:
+    href: https://www.cnrs.fr
+    html: <img src="https://crp2a.github.io/bdXdata/reference/figures/logo_cnrs.jpg" height="64" />
+
+template:
+  opengraph:
+    twitter:
+      creator: "@CRP2A"
+      site: "@CRP2A"
+      card: summary_large_image
+
+reference:
+- title: BEGe Spectrometry
+  contents:
+  - has_concept("BEGe")

@@ -4,6 +4,8 @@
 # bdXdata <img width=120px src="man/figures/logo.png" align="right" />
 
 <!-- badges: start -->
+
+[![R-CMD-check](https://github.com/crp2a/bdXdata/workflows/R-CMD-check/badge.svg)](https://github.com/crp2a/bdXdata/actions)
 <!-- badges: end -->
 
 ## Overview
@@ -12,20 +14,13 @@ A collection of shared data in use at the CRP2A laboratory.
 
 ## Installation
 
-You can install the released version of **bdXdata** from [our
-repository](https://github.com/crp2a/packages) with:
+You can install **bdXdata** from [our
+repository](https://crp2a.r-universe.dev) with:
 
 ``` r
-repos <- c("https://crp2a.github.io/packages", getOption("repos"))
-install.packages("bdXdata", repos = repos, type = "source")
-```
-
-Or install the development version from [GitHub](https://github.com/)
-with:
-
-``` r
-# install.packages("remotes")
-remotes::install_github("crp2a/bdXdata")
+options(repos = c(crp2a = 'https://crp2a.r-universe.dev',
+                  CRAN = 'https://cloud.r-project.org'))
+install.packages("bdXdata")
 ```
 
 ## Contributing
