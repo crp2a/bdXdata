@@ -18,7 +18,12 @@
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/v4-shims.min.css" integrity="sha256-wZjR52fzng1pJHwx4aV2AO3yyTOXrcDW7jBpJtTwVxw=" crossorigin="anonymous">
 <!-- clipboard.js --><script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.6/clipboard.min.js" integrity="sha256-inc5kl9MA1hkeYUt+EC3BhlIgyp/2jDIyBLS6k3UxPI=" crossorigin="anonymous"></script><!-- headroom.js --><script src="https://cdnjs.cloudflare.com/ajax/libs/headroom/0.11.0/headroom.min.js" integrity="sha256-AsUX4SJE1+yuDu5+mAVzJbuYNPHj/WroHuZ8Ir/CkE0=" crossorigin="anonymous"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/headroom/0.11.0/jQuery.headroom.min.js" integrity="sha256-ZX/yNShbjqsohH1k95liqY9Gd8uOiE1S4vZc+9KQ1K4=" crossorigin="anonymous"></script><!-- pkgdown --><link href="pkgdown.css" rel="stylesheet">
 <script src="pkgdown.js"></script><meta property="og:title" content="Shared Data in Use at the CRP2A Laboratory">
-<meta property="og:description" content="A collection of shared data in use at the CRP2A laboratory.">
+<meta property="og:description" content="A collection of shared data in use at the CRP2A laboratory
+    (UMR 5060 - CNRS, Université Bordeaux Montaigne). This package
+    contains data specific to the laboratory instruments (calibration,
+    monitoring, quality control, etc.). These data sets are openly
+    distributed in order to ensure transparency and reproducibility of the
+    results published by the laboratory team.">
 <meta property="og:image" content="https://crp2a.github.io/bdXdata/logo.png">
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:creator" content="@CRP2A">
@@ -82,10 +87,11 @@
 </h1></div>
 <!-- badges: start -->
 
+<p><a href="https://www.repostatus.org/#wip"><img src="https://www.repostatus.org/badges/latest/wip.svg" alt="Project Status: WIP – Initial development is in progress, but there has not yet been a stable, usable release suitable for the public."></a> <!-- badges: end --></p>
 <div id="overview" class="section level2">
 <h2 class="hasAnchor">
 <a href="#overview" class="anchor"></a>Overview</h2>
-<p>A collection of shared data in use at the CRP2A laboratory.</p>
+<p>A collection of shared data in use at the CRP2A laboratory (UMR 5060 - CNRS, Université Bordeaux Montaigne). This package contains data specific to the laboratory instruments (calibration, monitoring, quality control, etc.). These datasets are openly distributed in order to ensure transparency and reproducibility of the results published by the laboratory team.</p>
 </div>
 <div id="installation" class="section level2">
 <h2 class="hasAnchor">
@@ -95,6 +101,14 @@
 <code class="sourceCode R"><span class="fu"><a href="https://rdrr.io/r/base/options.html">options</a></span><span class="op">(</span>repos <span class="op">=</span> <span class="fu"><a href="https://rdrr.io/r/base/c.html">c</a></span><span class="op">(</span>crp2a <span class="op">=</span> <span class="st">'https://crp2a.r-universe.dev'</span>,
                   CRAN <span class="op">=</span> <span class="st">'https://cloud.r-project.org'</span><span class="op">)</span><span class="op">)</span>
 <span class="fu"><a href="https://rdrr.io/r/utils/install.packages.html">install.packages</a></span><span class="op">(</span><span class="st">"bdXdata"</span><span class="op">)</span></code></pre></div>
+</div>
+<div id="usage" class="section level2">
+<h2 class="hasAnchor">
+<a href="#usage" class="anchor"></a>Usage</h2>
+<p>The datasets can be loaded after installing the package:</p>
+<div class="sourceCode" id="cb2"><pre class="downlit sourceCode r">
+<code class="sourceCode R"><span class="fu"><a href="https://rdrr.io/r/utils/data.html">data</a></span><span class="op">(</span><span class="st">"BEGe_60cc"</span>, package <span class="op">=</span> <span class="st">"bdXdata"</span><span class="op">)</span></code></pre></div>
+<p>The raw data (CSV format) is available in the <code>data-raw</code> folder in this repository.</p>
 </div>
 <div id="contributing" class="section level2">
 <h2 class="hasAnchor">
