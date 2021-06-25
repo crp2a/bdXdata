@@ -17,21 +17,33 @@ knitr::opts_chunk$set(
 
 <!-- badges: start -->
 [![R-CMD-check](https://github.com/crp2a/bdXdata/workflows/R-CMD-check/badge.svg)](https://github.com/crp2a/bdXdata/actions)
+
+[![Project Status: WIP – Initial development is in progress, but there has not yet been a stable, usable release suitable for the public.](https://www.repostatus.org/badges/latest/wip.svg)](https://www.repostatus.org/#wip)
 <!-- badges: end -->
 
 ## Overview
 
-A collection of shared data in use at the CRP2A laboratory.
+A collection of shared data in use at the CRP2A laboratory (UMR 5060 - CNRS, Université Bordeaux Montaigne). This package contains data specific to the laboratory instruments (calibration, monitoring, quality control, etc.). These datasets are openly distributed in order to ensure transparency and reproducibility of the results published by the laboratory team.
 
 ## Installation
 
 You can install **bdXdata** from [our repository](https://crp2a.r-universe.dev) with:
 
-```{r drat-installation, eval=FALSE}
+```{r installation, eval=FALSE}
 options(repos = c(crp2a = 'https://crp2a.r-universe.dev',
                   CRAN = 'https://cloud.r-project.org'))
 install.packages("bdXdata")
 ```
+
+## Usage
+
+The datasets can be loaded after installing the package:
+
+```{r data, eval=FALSE}
+data("BEGe_60cc", package = "bdXdata")
+```
+
+The raw data (CSV format) is available in the `data-raw` folder in this repository.
 
 ## Contributing
 

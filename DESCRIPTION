@@ -1,11 +1,11 @@
-Package: bdXdata
 Type: Package
+Package: bdXdata
 Title: Shared Data in Use at the CRP2A Laboratory
 Version: 0.1.0
 Authors@R: 
     c(person(given = "Nicolas",
              family = "Frerebeau",
-             role = c("aut"),
+             role = "aut",
              email = "nicolas.frerebeau@u-bordeaux-montaigne.fr",
              comment = c(ORCID = "0000-0001-5759-4944")),
       person(given = "Brice",
@@ -17,11 +17,15 @@ Authors@R:
              role = c("cph", "fnd")),
       person(given = "CNRS",
              role = "fnd"))
-Maintainer: Brice Lebrun
-    <brice.lebrun@u-bordeaux-montaigne.fr>
-Description: A collection of shared data in use at the CRP2A laboratory.
+Maintainer: Brice Lebrun <brice.lebrun@u-bordeaux-montaigne.fr>
+Description: A collection of shared data in use at the CRP2A laboratory
+    (UMR 5060 - CNRS, Université Bordeaux Montaigne). This package
+    contains data specific to the laboratory instruments (calibration,
+    monitoring, quality control, etc.). These data sets are openly
+    distributed in order to ensure transparency and reproducibility of the
+    results published by the laboratory team.
 License: GPL (>= 3)
-URL: https://github.com/crp2a/bdXdata
+URL: https://crp2a.github.io/bdXdata/, https://github.com/crp2a/bdXdata
 BugReports: https://github.com/crp2a/bdXdata/issues
 Depends:
     R (>= 2.10)

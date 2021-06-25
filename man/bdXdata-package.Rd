@@ -9,7 +9,12 @@
 \description{
 \if{html}{\figure{logo.png}{options: align='right' alt='logo' width='120'}}
 
-A collection of shared data in use at the CRP2A laboratory.
+A collection of shared data in use at the CRP2A laboratory
+    (UMR 5060 - CNRS, Université Bordeaux Montaigne). This package
+    contains data specific to the laboratory instruments (calibration,
+    monitoring, quality control, etc.). These data sets are openly
+    distributed in order to ensure transparency and reproducibility of the
+    results published by the laboratory team.
 }
 \details{
 \tabular{ll}{
@@ -22,6 +27,7 @@ A collection of shared data in use at the CRP2A laboratory.
 \seealso{
 Useful links:
 \itemize{
+  \item \url{https://crp2a.github.io/bdXdata/}
   \item \url{https://github.com/crp2a/bdXdata}
   \item Report bugs at \url{https://github.com/crp2a/bdXdata/issues}
 }
