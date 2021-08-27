@@ -1,7 +1,28 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
+    <loc>https://crp2a.github.io/bdXdata/404.html</loc>
+  </url>
+  <url>
+    <loc>https://crp2a.github.io/bdXdata/CODE_OF_CONDUCT.html</loc>
+  </url>
+  <url>
+    <loc>https://crp2a.github.io/bdXdata/CODING_STYLE.html</loc>
+  </url>
+  <url>
+    <loc>https://crp2a.github.io/bdXdata/CONTRIBUTING.html</loc>
+  </url>
+  <url>
+    <loc>https://crp2a.github.io/bdXdata/LICENSE.html</loc>
+  </url>
+  <url>
+    <loc>https://crp2a.github.io/bdXdata/authors.html</loc>
+  </url>
+  <url>
     <loc>https://crp2a.github.io/bdXdata/index.html</loc>
+  </url>
+  <url>
+    <loc>https://crp2a.github.io/bdXdata/pull_request_template.html</loc>
   </url>
   <url>
     <loc>https://crp2a.github.io/bdXdata/reference/BEGe_12cc.html</loc>
@@ -11,6 +32,9 @@
   </url>
   <url>
     <loc>https://crp2a.github.io/bdXdata/reference/bdXdata-package.html</loc>
+  </url>
+  <url>
+    <loc>https://crp2a.github.io/bdXdata/reference/index.html</loc>
   </url>
   <url>
     <loc>https://crp2a.github.io/bdXdata/reference/ref_mac.html</loc>
