@@ -1,30 +1,65 @@
 # PREPARE DATASETS
 
 # BEGe =========================================================================
-## Background and Standards Intensity ------------------------------------------
+## Background and Standard Intensities -----------------------------------------
 
-# 12cc raw data
-bkg_intensity_BEGe_12cc_2019 <- read.table(file = "data-raw/BEGe_calibration/bkg_standard_intensity_BEGe_12cc_2019.csv", header = TRUE, sep = ",", dec = ".")
-bkg_intensity_BEGe_12cc_2020 <- read.table(file = "data-raw/BEGe_calibration/bkg_standard_intensity_BEGe_12cc_2020.csv", header = TRUE, sep = ",", dec = ".")
-bkg_intensity_BEGe_12cc_2021 <- read.table(file = "data-raw/BEGe_calibration/bkg_standard_intensity_BEGe_12cc_2021.csv", header = TRUE, sep = ",", dec = ".")
-# 60cc raw data
-bkg_intensity_BEGe_60cc_2019 <- read.table(file = "data-raw/BEGe_calibration/bkg_standard_intensity_BEGe_60cc_2019.csv", header = TRUE, sep = ",", dec = ".")
-bkg_intensity_BEGe_60cc_2020 <- read.table(file = "data-raw/BEGe_calibration/bkg_standard_intensity_BEGe_60cc_2020.csv", header = TRUE, sep = ",", dec = ".")
-bkg_intensity_BEGe_60cc_2021 <- read.table(file = "data-raw/BEGe_calibration/bkg_standard_intensity_BEGe_60cc_2021.csv", header = TRUE, sep = ",", dec = ".")
-
-# store as list
-BEGe_60cc <- list(
-  '2019' = bkg_intensity_BEGe_60cc_2019,
-  '2020' = bkg_intensity_BEGe_60cc_2020,
-  '2021' = bkg_intensity_BEGe_60cc_2021
+# Read data 12cc
+BEGe_12cc_files <- list.files(
+  path = "data-raw/BEGe",
+  pattern = "12cc",
+  full.names = TRUE
 )
-BEGe_12cc <- list(
-  '2019' = bkg_intensity_BEGe_12cc_2019,
-  '2020' = bkg_intensity_BEGe_12cc_2020,
-  '2021' = bkg_intensity_BEGe_12cc_2021
+names(BEGe_12cc_files) <- regmatches(BEGe_12cc_files,
+                                     regexpr("[0-9]{4}", BEGe_12cc_files))
+BEGe_12cc <- lapply(
+  X = BEGe_12cc_files,
+  FUN = read.table,
+  header = TRUE,
+  sep = ",",
+  dec = "."
 )
 
-# save as RDA
+# Read data 60cc
+BEGe_60cc_files <- list.files(
+  path = "data-raw/BEGe",
+  pattern = "60cc",
+  full.names = TRUE
+)
+names(BEGe_60cc_files) <- regmatches(BEGe_60cc_files,
+                                     regexpr("[0-9]{4}", BEGe_60cc_files))
+BEGe_60cc <- lapply(
+  X = BEGe_60cc_files,
+  FUN = read.table,
+  header = TRUE,
+  sep = ",",
+  dec = "."
+)
+
+# Add Mass Absorption Coefficients
+MAC <- read.table(
+  file = "data-raw/references/MAC.csv",
+  header = TRUE, sep = ",", dec = "."
+)
+BEGe_12cc <- lapply(
+  X = BEGe_12cc,
+  FUN = merge,
+  y = MAC,
+  by = c("isotope", "energy"),
+  all.x = TRUE,
+  all.y = FALSE,
+  sort = FALSE
+)
+BEGe_60cc <- lapply(
+  X = BEGe_60cc,
+  FUN = merge,
+  y = MAC,
+  by = c("isotope", "energy"),
+  all.x = TRUE,
+  all.y = FALSE,
+  sort = FALSE
+)
+
+# Save
 usethis::use_data(BEGe_60cc, overwrite = TRUE)
 usethis::use_data(BEGe_12cc, overwrite = TRUE)
 
@@ -34,14 +69,14 @@ std_activity <- read.table(
   file = "data-raw/standards/std_activity.csv",
   header = TRUE, sep = ",", dec = "."
 )
-usethis::use_data(std_activity, overwrite = TRUE)
+usethis::use_data(std_activity, overwrite = FALSE)
 
 ## Clermont --------------------------------------------------------------------
 std_clermont <- read.table(
   file = "data-raw/standards/std_clermont.csv",
   header = TRUE, sep = ",", dec = "."
 )
-usethis::use_data(std_clermont, overwrite = TRUE)
+usethis::use_data(std_clermont, overwrite = FALSE)
 
 # Reference Values =============================================================
 ## Mass Absorption Coefficient -------------------------------------------------
@@ -49,4 +84,11 @@ ref_mac <- read.table(
   file = "data-raw/references/mass_absorption_coefficient.csv",
   header = TRUE, sep = ",", dec = "."
 )
-usethis::use_data(ref_mac, overwrite = TRUE)
+usethis::use_data(ref_mac, overwrite = FALSE)
+
+## Interferences ---------------------------------------------------------------
+ref_interfer <- read.table(
+  file = "data-raw/references/interferences.csv",
+  header = TRUE, sep = ",", dec = "."
+)
+usethis::use_data(ref_interfer, overwrite = FALSE)

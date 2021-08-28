@@ -1,4 +1,4 @@
-# STANDARDS MATERIALS
+# LAB STANDARD MATERIALS
 
 #' Characteristics of Standard Materials
 #'

@@ -7,15 +7,15 @@
 \format{
 A \code{\link{list}} of \code{\link{data.frame}} with 8 variables:
 \describe{
-\item{\code{isotope}}{Measured isotope.}
-\item{\code{serie}}{Radioactive decay series to which the considered isotope
-belongs.}
-\item{\code{energy}}{Theoretical energy of the considered peak.}
+\item{\code{isotope}}{Isotope.}
+\item{\code{series}}{Radioactive decay series.}
+\item{\code{energy}}{Theoretical energy of the peak (keV).}
 \item{\code{bkg}}{Background intensity value (c/ks).}
-\item{\code{bkg_error}}{Background error intensity value (c/ks).}
-\item{\code{standard_name}}{Name of the used standard.}
-\item{\code{standard}}{Standard intensity value (c/ks).}
-\item{\code{standard_error}}{Standard error intensity value (c/ks).}
+\item{\code{bkg_error}}{Background intensity error (c/ks).}
+\item{\code{std}}{Standard intensity value (c/ks).}
+\item{\code{std_error}}{Standard intensity error (c/ks).}
+\item{\code{std_name}}{Name of the standard.}
+\item{\code{mac}}{Mass absorption coefficient (cm2/g).}
 }
 }
 \usage{
