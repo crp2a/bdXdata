@@ -72,11 +72,11 @@ std_activity <- read.table(
 usethis::use_data(std_activity, overwrite = FALSE)
 
 ## Clermont --------------------------------------------------------------------
-std_clermont <- read.table(
+clermont <- read.table(
   file = "data-raw/standards/std_clermont.csv",
   header = TRUE, sep = ",", dec = "."
 )
-usethis::use_data(std_clermont, overwrite = FALSE)
+usethis::use_data(clermont, overwrite = FALSE)
 
 # Reference Values =============================================================
 ## Mass Absorption Coefficient -------------------------------------------------
@@ -86,9 +86,16 @@ ref_mac <- read.table(
 )
 usethis::use_data(ref_mac, overwrite = FALSE)
 
+## Isotopiques data ------------------------------------------------------------
+isotopes <- read.table(
+  file = "data-raw/references/isotopes.csv",
+  header = TRUE, sep = ",", dec = "."
+)
+usethis::use_data(isotopes, overwrite = FALSE)
+
 ## Interferences ---------------------------------------------------------------
-ref_interfer <- read.table(
+interferences <- read.table(
   file = "data-raw/references/interferences.csv",
   header = TRUE, sep = ",", dec = "."
 )
-usethis::use_data(ref_interfer, overwrite = FALSE)
+usethis::use_data(interferences, overwrite = FALSE)

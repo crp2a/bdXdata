@@ -1,4 +1,4 @@
-isotope,energy,target,target_energy,probability,probability_error
+isotope,energy,target,target_energy,proba,proba_error
 Ac228,93.5,Th234,92.8,0.031,0.004
 Bi214,93.5,Th234,92.8,0.0011,0.0002
 Bi212,143.9,U235,143.0,0,0.0001

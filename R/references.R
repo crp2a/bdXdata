@@ -27,6 +27,19 @@
 #' @keywords datasets
 "ref_mac"
 
+#' Isotopic Data
+#'
+#' @format A [`data.frame`] with 18 observations of 4 variables:
+#'  \describe{
+#'   \item{`isotope`}{Isotope.}
+#'   \item{`energy`}{Theoretical energy of the peak (keV).}
+#'   \item{`mac`}{Mass absorption coefficient (cm2/g).}
+#'   \item{`proba_emission`}{}
+#'  }
+#' @family references
+#' @keywords datasets
+"isotopes"
+
 #' Interferences
 #'
 #' @format A [`data.frame`] with 8 observations of 6 variables:
@@ -35,9 +48,9 @@
 #'   \item{`energy`}{Theoretical energy of the peak (keV).}
 #'   \item{`target`}{}
 #'   \item{`target_energy`}{(keV).}
-#'   \item{`probability`}{}
-#'   \item{`probability_error`}{}
+#'   \item{`proba`}{}
+#'   \item{`proba_error`}{}
 #'  }
 #' @family references
 #' @keywords datasets
-"ref_interfer"
+"interferences"

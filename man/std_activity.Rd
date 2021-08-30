@@ -8,9 +8,9 @@
 A \code{\link{data.frame}} with 2 rows and 14 variables:
 \describe{
 \item{\code{standard}}{Name of the standard.}
-\item{\code{thickness}}{Thickness in centimeter.}
-\item{\code{volume}}{Volume in cubic centimeter.}
-\item{\code{mass}}{Mass in grams.}
+\item{\code{thickness}}{Thickness (cm).}
+\item{\code{volume}}{Volume (cm3).}
+\item{\code{mass}}{Mass (g).}
 \item{\code{activity_U}}{Uranium specific activity (Bq/kg).}
 \item{\code{activity_U_error}}{Uranium specific activity error (Bq/kg).}
 \item{\code{activity_Th}}{Thorium specific activity (Bq/kg).}
@@ -30,7 +30,7 @@ Characteristics of Standard Materials
 }
 \seealso{
 Other standards: 
-\code{\link{std_clermont}}
+\code{\link{clermont}}
 }
 \concept{standards}
 \keyword{datasets}

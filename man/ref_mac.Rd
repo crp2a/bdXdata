@@ -35,7 +35,8 @@ Mass Absorption Coefficient
 }
 \seealso{
 Other references: 
-\code{\link{ref_interfer}}
+\code{\link{interferences}},
+\code{\link{isotopes}}
 }
 \concept{references}
 \keyword{datasets}
