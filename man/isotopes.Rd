@@ -8,6 +8,7 @@
 A \code{\link{data.frame}} with 18 observations of 4 variables:
 \describe{
 \item{\code{isotope}}{Isotope.}
+\item{\code{series}}{Series}
 \item{\code{energy}}{Theoretical energy of the peak (keV).}
 \item{\code{mac}}{Mass absorption coefficient (cm2/g).}
 \item{\code{proba_emission}}{}

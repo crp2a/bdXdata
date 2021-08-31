@@ -32,6 +32,7 @@
 #' @format A [`data.frame`] with 18 observations of 4 variables:
 #'  \describe{
 #'   \item{`isotope`}{Isotope.}
+#'   \item{`series`}{Series}
 #'   \item{`energy`}{Theoretical energy of the peak (keV).}
 #'   \item{`mac`}{Mass absorption coefficient (cm2/g).}
 #'   \item{`proba_emission`}{}

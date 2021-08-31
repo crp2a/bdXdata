@@ -91,7 +91,7 @@ isotopes <- read.table(
   file = "data-raw/references/isotopes.csv",
   header = TRUE, sep = ",", dec = "."
 )
-usethis::use_data(isotopes, overwrite = FALSE)
+usethis::use_data(isotopes, overwrite = TRUE)
 
 ## Interferences ---------------------------------------------------------------
 interferences <- read.table(
