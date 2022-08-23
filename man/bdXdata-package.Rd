@@ -7,14 +7,9 @@
 \alias{bdXdata}
 \title{bdXdata: Shared Data in Use at the CRP2A Laboratory}
 \description{
-\if{html}{\figure{logo.png}{options: align='right' alt='logo' width='120'}}
+\if{html}{\figure{logo.png}{options: style='float: right' alt='logo' width='120'}}
 
-A collection of shared data in use at the CRP2A laboratory
-    (UMR 5060 - CNRS, Université Bordeaux Montaigne). This package
-    contains data specific to the laboratory instruments (calibration,
-    monitoring, quality control, etc.). These data sets are openly
-    distributed in order to ensure transparency and reproducibility of the
-    results published by the laboratory team.
+A collection of shared data in use at the Archéosciences Bordeaux laboratory (UMR 6034 - CNRS, Université Bordeaux Montaigne, Université de Bordeaux). This package contains data specific to the laboratory instruments (calibration, monitoring, quality control, etc.). These data sets are openly distributed in order to ensure transparency and reproducibility of the results published by the laboratory team.
 }
 \details{
 \tabular{ll}{

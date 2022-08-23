@@ -10,20 +10,22 @@ Authors@R:
              comment = c(ORCID = "0000-0001-5759-4944")),
       person(given = "Brice",
              family = "Lebrun",
-             role = c("aut", "cre"),
+             role = "aut",
              email = "brice.lebrun@u-bordeaux-montaigne.fr",
              comment = c(ORCID = "0000-0001-7503-8685")),
+      person(given = "Archéosciences Bordeaux",
+             role = "cre",
+             email = "services-archeosciences@u-bordeaux-montaigne.fr"),
       person(given = "Université Bordeaux Montaigne",
              role = c("cph", "fnd")),
       person(given = "CNRS",
              role = "fnd"))
-Maintainer: Brice Lebrun <brice.lebrun@u-bordeaux-montaigne.fr>
-Description: A collection of shared data in use at the CRP2A laboratory
-    (UMR 5060 - CNRS, Université Bordeaux Montaigne). This package
-    contains data specific to the laboratory instruments (calibration,
-    monitoring, quality control, etc.). These data sets are openly
-    distributed in order to ensure transparency and reproducibility of the
-    results published by the laboratory team.
+Description: A collection of shared data in use at the Archéosciences Bordeaux 
+    laboratory (UMR 6034 - CNRS, Université Bordeaux Montaigne, Université de 
+    Bordeaux). This package contains data specific to the laboratory 
+    instruments (calibration, monitoring, quality control, etc.). These data 
+    sets are openly distributed in order to ensure transparency and 
+    reproducibility of the results published by the laboratory team.
 License: GPL (>= 3)
 URL: https://crp2a.github.io/bdXdata/, https://github.com/crp2a/bdXdata
 BugReports: https://github.com/crp2a/bdXdata/issues
@@ -32,4 +34,4 @@ Depends:
 Encoding: UTF-8
 LazyData: true
 Roxygen: list(markdown = TRUE)
-RoxygenNote: 7.1.1
+RoxygenNote: 7.2.1

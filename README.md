@@ -14,12 +14,13 @@ public.](https://www.repostatus.org/badges/latest/wip.svg)](https://www.repostat
 
 ## Overview
 
-A collection of shared data in use at the CRP2A laboratory (UMR 5060 -
-CNRS, Université Bordeaux Montaigne). This package contains data
-specific to the laboratory instruments (calibration, monitoring, quality
-control, etc.). These datasets are openly distributed in order to ensure
-transparency and reproducibility of the results published by the
-laboratory team.
+A collection of shared data in use at the [Archéosciences
+Bordeaux](https://www.archeosciences-bordeaux.fr) laboratory (UMR 6034 -
+CNRS, Université Bordeaux Montaigne, Université de Bordeaux). This
+package contains data specific to the laboratory instruments
+(calibration, monitoring, quality control, etc.). These datasets are
+openly distributed in order to ensure transparency and reproducibility
+of the results published by the laboratory team.
 
 ## Installation
 
@@ -27,9 +28,7 @@ You can install **bdXdata** from [our
 repository](https://crp2a.r-universe.dev) with:
 
 ``` r
-options(repos = c(crp2a = 'https://crp2a.r-universe.dev',
-                  CRAN = 'https://cloud.r-project.org'))
-install.packages("bdXdata")
+install.packages("bdXdata", repos = "https://crp2a.r-universe.dev")
 ```
 
 ## Usage
