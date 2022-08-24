@@ -5,7 +5,7 @@
 
 <!-- badges: start -->
 
-[![R-CMD-check](https://github.com/crp2a/bdXdata/workflows/R-CMD-check/badge.svg)](https://github.com/crp2a/bdXdata/actions)
+[![R-CMD-check](https://github.com/crp2a/bdXdata/actions/workflows/R-CMD-check.yaml/badge.svg)](https://github.com/crp2a/bdXdata/actions/workflows/R-CMD-check.yaml)
 
 [![Project Status: WIP – Initial development is in progress, but there
 has not yet been a stable, usable release suitable for the
